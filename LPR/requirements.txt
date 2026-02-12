@@ -1,2 +1,9 @@
-ultralytics
-opencv-python-headless
+# YOLOv8 核心库
+ultralytics>=8.0.0
+
+# ONNX 推理引擎 (CPU版)
+onnx>=1.12.0
+onnxruntime>=1.14.0
+
+# 图像处理基础
+opencv-python-headless>=4.6.0

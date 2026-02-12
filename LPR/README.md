@@ -1,12 +1,15 @@
-# LPR 车牌识别部署项目
+# 🚗 LPR - Dual Mode License Plate Recognition
+> 基于 YOLOv8 的车牌识别项目，支持 **PyTorch** (训练/开发) 和 **ONNX** (部署) 双模式运行。
 
-这是一个基于 YOLOv8n 的车牌识别项目，部署在 Ubuntu 环境下。
-
-## 目录结构
-- `models/`: 存放训练好的权重文件
-- `data/`: 存放测试图片
-- `main.py`: 推理主程序
-
-## 如何运行
-1. 安装依赖: `pip install -r requirements.txt`
-2. 运行推理: `python3 main.py`
+## 📂 项目结构
+```text
+LPR/
+├── models/             # 模型仓库
+│   ├── best.pt         # PyTorch 权重 (用于开发)
+│   └── best.onnx       # ONNX 权重 (用于部署)
+├── data/               # 测试数据
+├── predict_pt.py       # ✅ 方式一：PyTorch 推理脚本
+├── predict_onnx.py     # ✅ 方式二：ONNX 推理脚本
+├── requirements.txt    # 项目依赖
+└── README.md           # 说明文档
+```
