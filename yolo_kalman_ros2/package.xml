@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>yolo_kalman_ros2</name>
+  <version>0.0.0</version>
+  <description>YOLOv8 vehicle detection with Kalman Filter</description>
+  <maintainer email="causin@todo.todo">causin</maintainer>
+  <license>TODO: License declaration</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>rclcpp</depend>
+  <depend>sensor_msgs</depend>
+  <depend>cv_bridge</depend>
+  <depend>opencv</depend>
+  <depend>ament_index_cpp</depend>
+  <depend>image_transport</depend>
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
